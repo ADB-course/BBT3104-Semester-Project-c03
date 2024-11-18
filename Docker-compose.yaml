@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: Jambo
+      MYSQL_DATABASE: DavisAndShirtliffDB
+    ports:
+      - "3306:3306"      # Host port 3306 mapped to container port 3306 (MySQL default)
+      - "33060:33060"    # Host port 33060 mapped to container port 33060 (MySQL X Protocol)
+    volumes:
+      - mysql_data:/var/lib/mysql  # Named volume for persistent data
+
+volumes:
+  mysql_data:
