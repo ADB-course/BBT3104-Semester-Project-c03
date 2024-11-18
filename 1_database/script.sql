@@ -1,2 +1,7 @@
--- Write your SQL code here
-CREATE DATABASE Davis_Shirtliff
+CREATE DATABASE DavisAndShirtliffDB;
+USE DavisAndShirtliffDB;
+-- Grant permission here--
+GRANT ALL PRIVILEGES ON `168335_BBT3104-Semester-Project-c03`.* TO `155499`@`%`;
+GRANT ALL PRIVILEGES ON `168335_BBT3104-Semester-Project-c03`.* TO `154683`@`%`;
+GRANT ALL PRIVILEGES ON `168335_BBT3104-Semester-Project-c03`.* TO `166443`@`%`;
+GRANT ALL PRIVILEGES ON `168335_BBT3104-Semester-Project-c03`.* TO `654321`@`%`;
